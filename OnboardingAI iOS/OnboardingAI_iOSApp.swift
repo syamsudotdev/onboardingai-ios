@@ -11,7 +11,9 @@ import SwiftUI
 struct OnboardingAI_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                VoiceSwitcherView()
+            }
         }
     }
 }
