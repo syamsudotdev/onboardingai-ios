@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0A041C2D736BEE0014C60C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A0A041B2D736BEB0014C60C /* README.md */; };
 		4AEE93ED2D72BBDF00E8581F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4AEE93EC2D72BBDF00E8581F /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0A041B2D736BEB0014C60C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4A88C9762D7095390024E39F /* OnboardingAI iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnboardingAI iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A88C9862D70953B0024E39F /* OnboardingAI iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OnboardingAI iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A88C9902D70953B0024E39F /* OnboardingAI iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OnboardingAI iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		4A88C96D2D7095390024E39F = {
 			isa = PBXGroup;
 			children = (
+				4A0A041B2D736BEB0014C60C /* README.md */,
 				4A88C9782D7095390024E39F /* OnboardingAI iOS */,
 				4A88C9892D70953B0024E39F /* OnboardingAI iOSTests */,
 				4A88C9932D70953B0024E39F /* OnboardingAI iOSUITests */,
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0A041C2D736BEE0014C60C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
