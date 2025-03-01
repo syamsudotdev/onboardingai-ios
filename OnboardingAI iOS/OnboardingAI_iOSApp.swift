@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct OnboardingAI_iOSApp: App {
-    var body: some Scene {
-        WindowGroup {
-            NavigationView {
-                VoiceSwitcherView()
-            }
-        }
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        VoiceSwitcherView()
+      }
     }
+  }
 }

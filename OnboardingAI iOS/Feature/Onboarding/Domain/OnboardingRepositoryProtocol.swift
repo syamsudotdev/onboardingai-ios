@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol OnboardingRepositoryProtocol : Sendable {
-    func getFileUri(_ voiceId: Int, _ voiceSampleId: Int) -> URL?
-    func getTranscription(_ voiceId: Int, _ voiceSampleId: Int) async -> String?
+protocol OnboardingRepositoryProtocol: Sendable {
+  func getFileUri(_ voiceId: Int, _ voiceSampleId: Int) -> URL?
+  func getTranscription(_ voiceId: Int, _ voiceSampleId: Int) async -> String?
 }

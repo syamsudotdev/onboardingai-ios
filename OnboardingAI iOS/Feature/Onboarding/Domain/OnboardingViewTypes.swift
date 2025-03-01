@@ -8,8 +8,8 @@
 import Foundation
 
 struct OnboardingViewType {
-    let voiceId: Int
-    let voiceSampleId: Int
-    let fileUri: URL?
-    let transcription: String?
+  let voiceId: Int
+  let voiceSampleId: Int
+  let fileUri: URL?
+  let transcription: String?
 }

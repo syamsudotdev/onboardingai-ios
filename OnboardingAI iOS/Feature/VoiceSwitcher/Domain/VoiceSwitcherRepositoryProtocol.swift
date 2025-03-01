@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol VoiceSwitcherRepositoryProtocol : Sendable {
-    func getVoiceItems() -> [VoiceItemIdentifiable]
-    func fetchVoiceFile(voiceId: Int, voiceSampleId: Int) async throws -> URL?
+protocol VoiceSwitcherRepositoryProtocol: Sendable {
+  func getVoiceItems() -> [VoiceItemIdentifiable]
+  func fetchVoiceFile(voiceId: Int, voiceSampleId: Int) async throws -> URL?
 }
