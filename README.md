@@ -5,6 +5,6 @@
 - SwiftFormat
 
 ## Formatting
-This project uses SwiftFormat to for formatting.
+This project uses [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) for formatting.
 
 To format Swift files in the project, run `swiftformat format -rip .`
