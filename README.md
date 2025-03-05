@@ -7,4 +7,4 @@
 ## Formatting
 This project uses [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) for formatting.
 
-To format Swift files in the project, run `swiftformat format -rip .`
+To format Swift files in the project, run `swift-format format -rip .`

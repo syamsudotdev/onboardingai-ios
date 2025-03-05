@@ -47,5 +47,13 @@ extension OnboardingView {
     func stopAudio() {
       player?.stop()
     }
+      
+      func verifyUser() {
+          Task {
+              let token = await onboardingRepository.verifyUser(UUID().uuidString)
+              voiceId
+              await onboardingRepository.streamAudio(voiceId: <#T##Int#>, stepId: <#T##Int#>, audioFormat: <#T##Int#>, jwtToken: <#T##String#>)
+          }
+      }
   }
 }

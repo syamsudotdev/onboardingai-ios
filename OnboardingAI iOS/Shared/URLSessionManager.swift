@@ -28,4 +28,26 @@ extension URLSessionManager {
     let url = URL(string: BaseUri + path)!
     return try await self.session.data(from: url)
   }
+    
+    static func post(url: String, headers: [String:String], body: Data? = nil) async throws -> (Data, URLResponse) {
+        let url = URL(string: url)!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        urlRequest.httpBody = body
+        headers.forEach {
+            urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
+        }
+        return try await self.session.data(for: urlRequest)
+    }
+    
+    static func streamBytes(url: String, headers: [String:String], method: String?, body: Data? = nil) async throws -> (URLSession.AsyncBytes, URLResponse) {
+        let url = URL(string: url)!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method
+        urlRequest.httpBody = body
+        headers.forEach {
+            urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
+        }
+        return try await self.session.bytes(for: urlRequest)
+    }
 }

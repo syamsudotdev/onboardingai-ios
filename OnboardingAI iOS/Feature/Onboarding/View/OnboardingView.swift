@@ -58,6 +58,7 @@ struct OnboardingView: View {
       .onAppear {
         viewModel.playAudio()
         viewModel.getTranscription()
+        viewModel.verifyUser()
       }.onDisappear {
         viewModel.stopAudio()
       }
